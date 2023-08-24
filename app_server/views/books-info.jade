@@ -1,0 +1,80 @@
+extends layout
+
+block content
+  .row.page-header
+    .col-lg-12
+      h1(style="color: #FFFFFF") Harry Potter and the Philosopher's Stone 
+  .row
+    .col-xs-12.col-md-9
+      .row
+        .col-xs-12.col-sm-6
+          p.rating
+            span.glyphicon.glyphicon-star
+            span.glyphicon.glyphicon-star
+            span.glyphicon.glyphicon-star
+            span.glyphicon.glyphicon-empty
+            span.glyphicon.glyphicon-star-empty
+            .panel.panel-primary
+            .panel-heading
+              h5.panel-title(style="color: #FFFFFF") Author - JK Rowling
+            .panel-body
+
+          .panel.panel-primary
+            .panel-heading
+              h5.panel-title(style="color: #FFFFFF") About
+            .panel-body
+              p The first novel in the Harry Potter series and Rowling's debut novel, it follows Harry Potter, a young wizard who discovers his magical heritage on his eleventh birthday, when he receives a letter of acceptance to Hogwarts School of Witchcraft and Wizardry.
+              p 223 pages
+              p First published June 26, 1997
+          .panel.panel-primary
+            .panel-heading
+             h5.panel-title(style="color: #FFFFFF") About the author
+            .panel-body
+              p Although she writes under the pen name J.K. Rowling, pronounced like rolling, her name when her first Harry Potter book was published was simply Joanne Rowling. Anticipating that the target audience of young boys might not want to read a book written by a woman, her publishers demanded that she use two initials, rather than her full name. As she had no middle name, she chose K as the second initial of her pen name, from her paternal grandmother Kathleen Ada Bulgen Rowling. She calls herself Jo and has said, "No one ever called me 'Joanne' when I was young, unless they were angry." Following her marriage, she has sometimes used the name Joanne Murray when conducting personal business. During the Leveson Inquiry she gave evidence under the name of Joanne Kathleen Rowling. In a 2012 interview, Rowling noted that she no longer cared that people pronounced her name incorrectly.
+            
+        .col-xs-12.col-sm-6.location-map
+          .panel.panel-primary
+            .panel-heading
+
+            .panel-body
+              img(src='https://res.cloudinary.com/bloomsbury-atlas/image/upload/w_568,c_scale/jackets/9781526626585.jpg', width='400', height='400',alt='Italian Trulli',  aria-label='Placeholder: Image cap', focusable='false', role='img', preserveAspectRatio='xMidYMid slice',  style='font-size:1.125rem;text-anchor:middle')
+      .row
+        .col-xs-12
+          .panel.panel-primary.review-panel
+            .panel-heading
+              a.button.btn.btn-info(type='button', href='/books/review/new' ) Add Review
+              h2.panel-title Readers reviews
+            .panel-body.review-container
+              .row
+                .review
+                  .well.well-sm.review-header
+                    span.rating
+                      span.glyphicon.glyphicon-star
+                      span.glyphicon.glyphicon-star
+                      span.glyphicon.glyphicon-star
+                      span.glyphicon.glyphicon-star
+                      span.glyphicon.glyphicon-star
+                  span.reviewAuthor
+                    strong Sherlock Holmes 
+                  small.reviewTimestamp 
+                    strong 16 July 2013
+                  .col-xs-12
+                    p 
+                      em  I will never ever rate this lower than 5 stars. BEAUTIFUL.
+              .row
+                .review
+                  .well.well-sm.review-header
+                    span.rating
+                      span.glyphicon.glyphicon-star
+                      span.glyphicon.glyphicon-star
+                      span.glyphicon.glyphicon-star
+                      span.glyphicon.glyphicon-star-empty
+                      span.glyphicon.glyphicon-star-empty
+                      
+                  span.reviewAuthor
+                    strong Mr Res
+                  small.reviewTimestamp 
+                    strong 16 July 2013
+                  .col-xs-12
+                    p 
+                      em  What a great book. Love the creativity

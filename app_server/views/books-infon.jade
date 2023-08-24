@@ -1,0 +1,80 @@
+extends layout
+
+block content
+  .row.page-header
+    .col-lg-12
+      h1(style="color: #FFFFFF") Angels and Demons
+  .row
+    .col-xs-12.col-md-9
+      .row
+        .col-xs-12.col-sm-6
+          p.rating
+            span.glyphicon.glyphicon-star
+            span.glyphicon.glyphicon-star
+            span.glyphicon.glyphicon-star
+            span.glyphicon.glyphicon-empty
+            span.glyphicon.glyphicon-star-empty
+            .panel.panel-primary
+            .panel-heading
+              h5.panel-title(style="color: #FFFFFF") Author - Dan Brown
+            .panel-body
+
+          .panel.panel-primary
+            .panel-heading
+              h5.panel-title(style="color: #FFFFFF") About
+            .panel-body
+              p World-renowned Harvard symbologist Robert Langdon is summoned to a Swiss research facility to analyze a cryptic symbol seared into the chest of a murdered physicist. What he discovers is unimaginable: a deadly vendetta against the Catholic Church by a centuries-old underground organization -- the Illuminati. In a desperate race to save the Vatican from a powerful time bomb, Langdon joins forces in Rome with the beautiful and mysterious scientist Vittoria Vetra. Together they embark on a frantic hunt through sealed crypts, dangerous catacombs, and deserted cathedrals, and into the depths of the most secretive vault on earth...the long-forgotten Illuminati lair.
+              p 736 pages
+              p First published May 1, 2000
+          .panel.panel-primary
+            .panel-heading
+             h5.panel-title(style="color: #FFFFFF") About the author
+            .panel-body
+              p Dan Brown is the author of numerous #1 bestselling novels, including The Da Vinci Code, which has become one of the best selling novels of all time as well as the subject of intellectual debate among readers and scholars. Browns novels are published in 52 languages around the world with 200 million copies in print. In 2005, Brown was named one of the 100 Most Influential People in the World by TIME Magazine, whose editors credited him with “keeping the publishing industry afloat; renewed interest in Leonardo da Vinci and early Christian history; spiking tourism to Paris and Rome; a growing membership in secret societies; the ire of Cardinals in Rome; eight books denying the claims of the novel and seven guides to read along with it; a flood of historical thrillers; and a major motion picture franchise.”
+            
+        .col-xs-12.col-sm-6.location-map
+          .panel.panel-primary
+            .panel-heading
+
+            .panel-body
+              img(src='https://www.crossword.in/cdn/shop/products/9780552161268.jpg?v=1680185038', width='450', height='450',alt='Italian Trulli',  aria-label='Placeholder: Image cap', focusable='false', role='img', preserveAspectRatio='xMidYMid slice',  style='font-size:1.125rem;text-anchor:middle')
+      .row
+        .col-xs-12
+          .panel.panel-primary.review-panel
+            .panel-heading
+              a.button.btn.btn-info(type='button', href='/books/review/new' ) Add Review
+              h2.panel-title Readers reviews
+            .panel-body.review-container
+              .row
+                .review
+                  .well.well-sm.review-header
+                    span.rating
+                      span.glyphicon.glyphicon-star
+                      span.glyphicon.glyphicon-star
+                      span.glyphicon.glyphicon-star
+                      span.glyphicon.glyphicon-star
+                      span.glyphicon.glyphicon-star
+                  span.reviewAuthor
+                    strong Sherlock Holmes 
+                  small.reviewTimestamp 
+                    strong 16 July 2013
+                  .col-xs-12
+                    p 
+                      em  I will never ever rate this lower than 5 stars. BEAUTIFUL.
+              .row
+                .review
+                  .well.well-sm.review-header
+                    span.rating
+                      span.glyphicon.glyphicon-star
+                      span.glyphicon.glyphicon-star
+                      span.glyphicon.glyphicon-star
+                      span.glyphicon.glyphicon-star-empty
+                      span.glyphicon.glyphicon-star-empty
+                      
+                  span.reviewAuthor
+                    strong Mr Res
+                  small.reviewTimestamp 
+                    strong 16 July 2013
+                  .col-xs-12
+                    p 
+                      em  What a great book. Love the creativity
