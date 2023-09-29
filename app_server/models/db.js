@@ -16,11 +16,11 @@ mongoose.connection.on('connected', function() {
 });
 
 // Error Event
-mongoose.connection.on('error', err => {
-    console.log("Mongoose connection error: " + err);
+mongoose.connection.on('error', function() {
+    console.log("Mongoose connection error: ");
 });
 
 // Disconnected Event
-mongoose.connection.on('disconnected', () => {
+mongoose.connection.on('disconnected', function() {
     console.log("Mongoose disconnected");
 });
