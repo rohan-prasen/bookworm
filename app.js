@@ -1,4 +1,6 @@
-var createError = require('http-errors');
+// Requiring db.js in app.js
+require('./app_server/models/db');var createError = require('http-errors');
+
 var express = require('express');
 var path = require('path');
 var cookieParser = require('cookie-parser');
