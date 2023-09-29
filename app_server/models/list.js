@@ -1,7 +1,8 @@
 // Requiring mongoose
 var mongoose = require('mongoose');
 
-// Defining Schemas
+/* Defining Schemas */
+
 // Review Schema
 var reviewSchema = new mongoose.Schema({
     author : String,
@@ -17,5 +18,3 @@ var reviewSchema = new mongoose.Schema({
         default: Date.now
     }
 });
-
-// 

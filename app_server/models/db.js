@@ -1,11 +1,17 @@
 // Requiring list
 require('./list');
+require('dotenv').config();
+const PORT = process.env.PORT || 3000;
 
 // Requiring Mongoose
 const mongoose = require('mongoose');
 
 // URI
-const URI =  "mongodb://0.0.0.0:27017";
+var gracefulShutdown;
+const URI =  "mongodb://localhost:27017";
+if (process.env.NODE_ENV === 'production') {
+    URI = process.env.MONGODB_URI;
+}
 
 // connection establishing 
 mongoose.connect(URI);
