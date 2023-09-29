@@ -8,7 +8,7 @@ const mongoose = require('mongoose');
 
 // URI
 var gracefulShutdown;
-const URI =  "mongodb://localhost:27017";
+const URI =  "mongodb://localhost:27017/bookworm";
 if (process.env.NODE_ENV === 'production') {
     URI = process.env.MONGODB_URI;
 }

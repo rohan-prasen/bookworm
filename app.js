@@ -1,6 +1,7 @@
 // Requiring db.js in app.js
 require('./app_server/models/db');var createError = require('http-errors');
 
+var routesApi = require('./app_api/routes/index');
 var express = require('express');
 var path = require('path');
 var cookieParser = require('cookie-parser');
@@ -15,6 +16,7 @@ var app = express();
 app.set('views', path.join(__dirname,'app_server', 'views'));
 app.set('view engine', 'jade');
 
+app.use('/api', routesApi);
 app.use(logger('dev'));
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
